@@ -19,8 +19,13 @@ export default function UseStateAndUseEffectExample() {
 
     return (
         <>
-            <h1>{counter}</h1>
-            <button onClick={() => setCounter(counter + 1)}>Incrementar</button>
+            <div style={{display: "flex", justifyContent: "center"}}>
+                <h1>Hooks - useState e useEffect</h1>
+            </div>
+            <div style={{display: "flex", justifyContent: "center"}}>
+                <h3>{counter}</h3> &nbsp;
+                <button onClick={() => setCounter(counter + 1)}>Incrementar</button>
+            </div>
         </>
     );
 }

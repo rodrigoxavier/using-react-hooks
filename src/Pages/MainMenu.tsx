@@ -14,7 +14,7 @@ export default function MainMenu() {
             <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
                 <button 
                     onClick={() => {history.push("/useStateUseEffect")}}
-                    style={{margin: "40px", padding: "10px", cursor: "pointer", background: "white", width: "200px"}}>
+                    style={{margin: "20px", padding: "10px", cursor: "pointer", background: "white", width: "200px"}}>
                         useState e useEffect
                     <img  
                         src="https://www.hookseabar.com/restaurants/hook/website/images/header-logo.png"
@@ -24,7 +24,7 @@ export default function MainMenu() {
                 </button>
                 <button 
                     onClick={() => {history.push("/useStateUseEffect")}}
-                    style={{margin: "40px", padding: "10px", cursor: "pointer", background: "white", width: "200px"}}>
+                    style={{margin: "20px", padding: "10px", cursor: "pointer", background: "white", width: "200px"}}>
                         useContext
                     <img  
                         src="https://www.hookseabar.com/restaurants/hook/website/images/header-logo.png"
@@ -34,8 +34,8 @@ export default function MainMenu() {
                 </button>
                 <button 
                     onClick={() => {history.push("/useStateUseEffect")}}
-                    style={{margin: "40px", padding: "10px", cursor: "pointer", background: "white", width: "200px"}}>
-                        useCallBack
+                    style={{margin: "20px", padding: "10px", cursor: "pointer", background: "white", width: "200px"}}>
+                        useCallback
                     <img  
                         src="https://www.hookseabar.com/restaurants/hook/website/images/header-logo.png"
                         alt="React Hooks"
@@ -44,7 +44,7 @@ export default function MainMenu() {
                 </button>
                 <button 
                     onClick={() => {history.push("/useStateUseEffect")}}
-                    style={{margin: "40px", padding: "10px", cursor: "pointer", background: "white", width: "200px"}}>
+                    style={{margin: "20px", padding: "10px", cursor: "pointer", background: "white", width: "200px"}}>
                         useMemo
                     <img  
                         src="https://www.hookseabar.com/restaurants/hook/website/images/header-logo.png"
@@ -54,7 +54,7 @@ export default function MainMenu() {
                 </button>
                 <button 
                     onClick={() => {history.push("/useStateUseEffect")}}
-                    style={{margin: "40px", padding: "10px", cursor: "pointer", background: "white", width: "200px"}}>
+                    style={{margin: "20px", padding: "10px", cursor: "pointer", background: "white", width: "200px"}}>
                         useRef
                     <img  
                         src="https://www.hookseabar.com/restaurants/hook/website/images/header-logo.png"
