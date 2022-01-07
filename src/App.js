@@ -4,6 +4,7 @@ import {useState} from 'react';
 
 function App() {
   const [visible, setVisible] = useState(true);
+  const [useEffectVisible, setUseEffectVisible] = useState(true);
 
   setTimeout(() => {
     setVisible(false);
