@@ -1,17 +1,28 @@
 import './App.css';
+
+//Components
 import UseStateAndUseEffectExample from './hooks/UseStateAndUseEffectExample.tsx';
-import {useState} from 'react';
+import MainMenu from './Pages/MainMenu.tsx';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
-  const [visible, setVisible] = useState(true);
-  const [useEffectVisible, setUseEffectVisible] = useState(true);
-
-  setTimeout(() => {
-    setVisible(false);
-  }, 5000)
-
   return (
-    visible ? <UseStateAndUseEffectExample /> : <></>
+    <>
+    <Router>
+      <Switch>
+        <Route
+          path={"/"}
+          exact
+          component={MainMenu}
+        />
+        <Route
+          path={"/useStateUseEffect"}
+          exact
+          component={UseStateAndUseEffectExample}
+        />
+      </Switch>
+    </Router>
+    </>
   );
 }
 

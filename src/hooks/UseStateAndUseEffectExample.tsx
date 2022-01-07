@@ -1,15 +1,21 @@
 import React, {useEffect, useState} from 'react';
+import { useHistory } from 'react-router-dom';
 
 export default function UseStateAndUseEffectExample() {
     const [counter, setCounter] = useState(0);
+    const history = useHistory();
 
     useEffect(() => {
         document.title = counter.toString();
 
+        setTimeout(() => {
+            history.push("/");
+        }, 3000);
+
         return(() => {
-            document.title = "React App";
+            document.title = "React Hooks - Exemplos";
         })
-    }, [counter])
+    }, [counter, history])
 
     return (
         <>
