@@ -7,11 +7,11 @@ const MainMenu = () => {
             <PageHeader backToHome={false}/>
             <div className="buttons-view">
                 <MenuButton title="useState e useEffect" path="/useStateUseEffect"/>
-                <MenuButton title="useContext" path="/"/>
-                <MenuButton title="useReducer" path="/"/>
-                <MenuButton title="useCallBack" path="/"/>
-                <MenuButton title="useMemo" path="/"/>
-                <MenuButton title="useRef" path="/"/>
+                <MenuButton title="useContext" path="/useContext"/>
+                <MenuButton title="useReducer" path="/useReducer"/>
+                <MenuButton title="useCallback" path="/useCallback"/>
+                <MenuButton title="useMemo" path="/useMemo"/>
+                <MenuButton title="useRef" path="/useRef"/>
             </div>
         </>
     )
