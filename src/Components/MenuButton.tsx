@@ -1,16 +1,22 @@
-import React, { useEffect, useState } from 'react';
-import { useHistory } from 'react-router-dom';
-import '../App.css';
+import React, { useEffect, useState } from "react";
+import { useHistory } from "react-router-dom";
+import "../App.css";
+import Hook from "../Assets/Images/Hook.png"
 
-const MenuButton: React.FC = props => {
+type ButtonProps = {
+    title: string;
+    path: string;
+  };
+
+const MenuButton: React.FC<ButtonProps> = props => {
     const history = useHistory();
     return (
         <button 
-            onClick={() => {history.push("/useStateUseEffect")}}
+            onClick={() => {history.push(props.path)}}
             className="button-style">
-                useState e useEffect
+                <p>{props.title}</p>
             <img  
-                src="https://www.hookseabar.com/restaurants/hook/website/images/header-logo.png"
+                src={Hook}
                 alt="React Hooks"
                 width={50}>
             </img>

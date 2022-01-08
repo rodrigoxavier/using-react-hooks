@@ -1,17 +1,24 @@
 import MenuButton from "../../src/Components/MenuButton";
+import MenuImage from "../Assets/Images/MenuImage.png" 
 
 const MainMenu = () => {
     return (
         <>
-            <div style={{display: "flex", flexDirection: "row", justifyContent: "center"}}>
+            <div className="menu-header">
                 <img 
-                    src="https://miro.medium.com/max/768/1*0j4xd4B_o-jxiaM9QYqgWw.png"
+                    src={MenuImage}
                     alt="React Hooks"
                     width={400}>
                 </img>
+                <p className="app-main-text menu-title">React Hooks - Exemplos</p>
             </div>
-            <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
-                <MenuButton/>                
+            <div className="buttons-view">
+                <MenuButton title="useState e useEffect" path="/useStateUseEffect"/>
+                <MenuButton title="useContext" path="/"/>
+                <MenuButton title="useReducer" path="/"/>
+                <MenuButton title="useCallBack" path="/"/>
+                <MenuButton title="useMemo" path="/"/>
+                <MenuButton title="useRef" path="/"/>
             </div>
         </>
     )
