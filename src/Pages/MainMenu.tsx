@@ -1,17 +1,10 @@
 import MenuButton from "../../src/Components/MenuButton";
-import MenuImage from "../Assets/Images/MenuImage.png" 
+import PageHeader from "../Components/Header";
 
 const MainMenu = () => {
     return (
         <>
-            <div className="menu-header">
-                <img 
-                    src={MenuImage}
-                    alt="React Hooks"
-                    width={400}>
-                </img>
-                <p className="app-main-text menu-title">React Hooks - Exemplos</p>
-            </div>
+            <PageHeader backToHome={false}/>
             <div className="buttons-view">
                 <MenuButton title="useState e useEffect" path="/useStateUseEffect"/>
                 <MenuButton title="useContext" path="/"/>

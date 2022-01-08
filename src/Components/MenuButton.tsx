@@ -13,7 +13,7 @@ const MenuButton: React.FC<ButtonProps> = props => {
     return (
         <button 
             onClick={() => {history.push(props.path)}}
-            className="button-style">
+            className="hook-button-style">
                 <p>{props.title}</p>
             <img  
                 src={Hook}

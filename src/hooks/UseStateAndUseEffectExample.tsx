@@ -1,30 +1,22 @@
 import React, {useEffect, useState} from 'react';
-import { useHistory } from 'react-router-dom';
+import PageHeader from '../Components/Header';
 
 const UseStateAndUseEffectExample = () => {
     const [counter, setCounter] = useState(0);
-    const history = useHistory();
 
     useEffect(() => {
         document.title = counter.toString();
-
-        setTimeout(() => {
-            history.push("/");
-        }, 3000);
-
         return(() => {
             document.title = "React Hooks - Exemplos";
         })
-    }, [counter, history])
+    }, [counter])
 
     return (
         <>
+            <PageHeader backToHome={true} title="useState e useEffect"/>
             <div style={{display: "flex", justifyContent: "center"}}>
-                <h1>Hooks - useState e useEffect</h1>
-            </div>
-            <div style={{display: "flex", justifyContent: "center"}}>
-                <h3>{counter}</h3> &nbsp;
-                <button onClick={() => setCounter(counter + 1)}>Incrementar</button>
+                <h3 className="app-main-text">{counter}</h3> &nbsp;
+                <button className="back-button-style" onClick={() => setCounter(counter + 1)}>Incrementar</button>
             </div>
         </>
     );
