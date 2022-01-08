@@ -14,7 +14,7 @@ const UseReducerExample = () => {
     return (
         <>
             <PageHeader backToHome={true} title="useReducer"/>
-            <div style={{display: "flex", justifyContent: "center"}}>
+            <div className="main-centered-div">
                 <h3 className="app-main-text">{counter}</h3> &nbsp;
                 <button className="back-button-style" onClick={() => setCounter(counter + 1)}>Incrementar</button>
             </div>

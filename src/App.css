@@ -46,3 +46,8 @@ html {
   font-size: 12px;
   font-weight: bold;
 }
+
+.main-centered-div {
+  display: flex;
+  justify-content: center;
+}
