@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import './index.css';
+import '../App.css';
 
 const MenuButton: React.FC = props => {
     const history = useHistory();

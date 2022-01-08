@@ -1,9 +1,9 @@
 import './App.css';
 
 //Components
-import UseStateAndUseEffectExample from './Hooks/UseStateAndUseEffectExample.tsx';
-import MainMenu from './Pages/MainMenu.tsx';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import MainMenu from './Pages/MainMenu';
+import UseStateAndUseEffectExample from './Hooks/UseStateAndUseEffectExample';
 
 function App() {
   return (
