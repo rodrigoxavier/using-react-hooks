@@ -1,7 +1,7 @@
 import './App.css';
 
 //Components
-import UseStateAndUseEffectExample from './hooks/UseStateAndUseEffectExample.tsx';
+import UseStateAndUseEffectExample from './Hooks/UseStateAndUseEffectExample.tsx';
 import MainMenu from './Pages/MainMenu.tsx';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 

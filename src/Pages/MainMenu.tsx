@@ -1,7 +1,6 @@
-import { useHistory } from "react-router-dom";
+import MenuButton from "../../src/Components/MenuButton";
 
-export default function MainMenu() {
-    const history = useHistory();
+const MainMenu = () => {
     return (
         <>
             <div style={{display: "flex", flexDirection: "row", justifyContent: "center"}}>
@@ -12,57 +11,10 @@ export default function MainMenu() {
                 </img>
             </div>
             <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
-                <button 
-                    onClick={() => {history.push("/useStateUseEffect")}}
-                    style={{margin: "20px", padding: "10px", cursor: "pointer", background: "white", width: "200px"}}>
-                        useState e useEffect
-                    <img  
-                        src="https://www.hookseabar.com/restaurants/hook/website/images/header-logo.png"
-                        alt="React Hooks"
-                        width={50}>
-                    </img>
-                </button>
-                <button 
-                    onClick={() => {history.push("/useStateUseEffect")}}
-                    style={{margin: "20px", padding: "10px", cursor: "pointer", background: "white", width: "200px"}}>
-                        useContext
-                    <img  
-                        src="https://www.hookseabar.com/restaurants/hook/website/images/header-logo.png"
-                        alt="React Hooks"
-                        width={50}>
-                    </img>
-                </button>
-                <button 
-                    onClick={() => {history.push("/useStateUseEffect")}}
-                    style={{margin: "20px", padding: "10px", cursor: "pointer", background: "white", width: "200px"}}>
-                        useCallback
-                    <img  
-                        src="https://www.hookseabar.com/restaurants/hook/website/images/header-logo.png"
-                        alt="React Hooks"
-                        width={50}>
-                    </img>
-                </button>
-                <button 
-                    onClick={() => {history.push("/useStateUseEffect")}}
-                    style={{margin: "20px", padding: "10px", cursor: "pointer", background: "white", width: "200px"}}>
-                        useMemo
-                    <img  
-                        src="https://www.hookseabar.com/restaurants/hook/website/images/header-logo.png"
-                        alt="React Hooks"
-                        width={50}>
-                    </img>
-                </button>
-                <button 
-                    onClick={() => {history.push("/useStateUseEffect")}}
-                    style={{margin: "20px", padding: "10px", cursor: "pointer", background: "white", width: "200px"}}>
-                        useRef
-                    <img  
-                        src="https://www.hookseabar.com/restaurants/hook/website/images/header-logo.png"
-                        alt="React Hooks"
-                        width={50}>
-                    </img>
-                </button>
+                <MenuButton/>                
             </div>
         </>
     )
 } 
+
+export default MainMenu;

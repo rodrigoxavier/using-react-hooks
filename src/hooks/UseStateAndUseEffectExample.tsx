@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { useHistory } from 'react-router-dom';
 
-export default function UseStateAndUseEffectExample() {
+const UseStateAndUseEffectExample = () => {
     const [counter, setCounter] = useState(0);
     const history = useHistory();
 
@@ -29,3 +29,5 @@ export default function UseStateAndUseEffectExample() {
         </>
     );
 }
+
+export default UseStateAndUseEffectExample;
