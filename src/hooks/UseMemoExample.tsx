@@ -45,6 +45,10 @@ const UseMemoExample = () => {
             <div className="main-centered-div">
                 <button className="back-button-style" onClick={() => sumEntriesMemoWithDeps()}>Somar useMemo com deps</button>
             </div>
+            <div className="main-centered-div">
+                <h5 className="app-main-text">Toda vez que acontece um re-render do componente as variáveis "sumWithDeps" e "sumWithoutDeps" são atualizadas. A diferença é que com as dependências fazem o cálculo com o valor das variáveis dependentes atualizadas.</h5> &nbsp;
+                <h5 className="app-main-text">Então, ao pedir a soma o cálculo NÃO é feito no momento do clique no botão pois já foi feito no re-render.</h5>
+            </div>
         </>
     );
 }
