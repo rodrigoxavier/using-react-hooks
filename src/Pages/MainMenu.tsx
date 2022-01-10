@@ -8,10 +8,10 @@ const MainMenu = () => {
             <div className="buttons-view">
                 <MenuButton title="useState e useEffect" path="/useStateUseEffect"/>
                 <MenuButton title="useContext e hook personalizado" path="/useContext"/>
-                <MenuButton title="useReducer" path="/useReducer"/>
                 <MenuButton title="useCallback" path="/useCallback"/>
                 <MenuButton title="useMemo" path="/useMemo"/>
                 <MenuButton title="useRef" path="/useRef"/>
+                <MenuButton title="useReducer" path="/useReducer"/>
             </div>
         </>
     )
