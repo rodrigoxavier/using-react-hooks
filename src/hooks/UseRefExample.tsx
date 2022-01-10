@@ -1,22 +1,25 @@
-import React, {useEffect, useState} from 'react';
+import React, {RefObject, useEffect, useRef, useState} from 'react';
 import PageHeader from '../Components/Header';
 
 const UseRefExample = () => {
-    const [counter, setCounter] = useState(0);
+    const firstInputRef = useRef<HTMLInputElement>(null);
+    const secondInputRef = useRef<HTMLInputElement>(null);
 
-    useEffect(() => {
-        document.title = counter.toString();
-        return(() => {
-            document.title = "React Hooks - Exemplos";
-        })
-    }, [counter])
+    const focusOnInput = (inputToFocus: RefObject<HTMLInputElement>) => {
+        inputToFocus.current?.focus();
+    }
 
     return (
         <>
             <PageHeader backToHome={true} title="useRef"/>
             <div className="main-centered-div">
-                <h3 className="app-main-text">{counter}</h3> &nbsp;
-                <button className="back-button-style" onClick={() => setCounter(counter + 1)}>Incrementar</button>
+                <input type="text" name="firstInput" ref={firstInputRef} value={firstInputRef.current?.value} /> &nbsp;
+                <span className="app-main-text">----------</span> &nbsp;
+                <input type="text" name="secondInput" ref={secondInputRef} value={secondInputRef.current?.value}/>
+            </div>
+            <div className="main-centered-div">
+                <button className="back-button-style" onClick={() => focusOnInput(firstInputRef)}>Focar no primeiro input</button>
+                <button className="back-button-style" onClick={() => focusOnInput(secondInputRef)}>Focar no segundo input</button>
             </div>
         </>
     );
