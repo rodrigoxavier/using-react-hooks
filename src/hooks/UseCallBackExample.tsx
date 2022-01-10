@@ -1,4 +1,4 @@
-import React, {useCallback, useEffect, useState} from 'react';
+import {useCallback, useState} from 'react';
 import PageHeader from '../Components/Header';
 
 const UseCallbackExample = () => {
@@ -10,11 +10,13 @@ const UseCallbackExample = () => {
         setEntriesSum(firstEntry + secondEntry);
     }
 
-    const sumEntriesCallbackNotDeps = useCallback(() => {
+    const sumEntriesCallbackWithoutDeps = useCallback(() => {
+        console.log('Executei withoutDeps');
         setEntriesSum(firstEntry + secondEntry);
     }, []);
 
     const sumEntriesCallbackWithDeps = useCallback(() => {
+        console.log('Executei withDeps');
         setEntriesSum(firstEntry + secondEntry);
     }, [firstEntry, secondEntry]);
 
@@ -34,7 +36,7 @@ const UseCallbackExample = () => {
                 <button className="back-button-style" onClick={() => sumEntries()}>Somar normalmente</button>
             </div>
             <div className="main-centered-div">
-                <button className="back-button-style" onClick={() => sumEntriesCallbackNotDeps()}>Somar useCB sem deps</button>
+                <button className="back-button-style" onClick={() => sumEntriesCallbackWithoutDeps()}>Somar useCB sem deps</button>
             </div>
             <div className="main-centered-div">
                 <button className="back-button-style" onClick={() => sumEntriesCallbackWithDeps()}>Somar useCB com deps</button>
