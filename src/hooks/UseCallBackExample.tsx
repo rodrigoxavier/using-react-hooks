@@ -1,7 +1,7 @@
 import {useCallback, useState} from 'react';
 import PageHeader from '../Components/Header';
 
-const UseCallbackExample = () => {
+const UseCallbackExample: React.FC = () => {
     const [firstEntry, setFirstEntry] = useState(0);
     const [secondEntry, setSecondEntry] = useState(0);
     const [entriesSum, setEntriesSum] = useState(0);

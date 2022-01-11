@@ -1,7 +1,7 @@
 import React, {useMemo, useState} from 'react';
 import PageHeader from '../Components/Header';
 
-const UseMemoExample = () => {
+const UseMemoExample: React.FC = () => {
     const [firstEntry, setFirstEntry] = useState(0);
     const [secondEntry, setSecondEntry] = useState(0);
     const [entriesSum, setEntriesSum] = useState(0);
