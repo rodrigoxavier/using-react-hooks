@@ -7,7 +7,7 @@ const MainMenu = () => {
             <PageHeader backToHome={false}/>
             <div className="buttons-view">
                 <MenuButton title="useState e useEffect" path="/useStateUseEffect"/>
-                <MenuButton title="useContext e hook personalizado" path="/useContext"/>
+                <MenuButton title="useContext, hook personalizado e useDebugValue" path="/useContext"/>
                 <MenuButton title="useCallback" path="/useCallback"/>
                 <MenuButton title="useMemo" path="/useMemo"/>
                 <MenuButton title="useRef" path="/useRef"/>

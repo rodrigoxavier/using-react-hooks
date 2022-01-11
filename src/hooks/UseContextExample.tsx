@@ -6,7 +6,7 @@ const UseContextExample = () => {
 
     return (
         <>
-            <PageHeader backToHome={true} title="useContext e hook personalizado"/>
+            <PageHeader backToHome={true} title="useContext, hook personalizado e useDebugValue"/>
             <div className="main-centered-div app-main-text" style={{background: themeContext.backgroundColor}}>
                 <h3
                     style={{color: themeContext.textColor}}

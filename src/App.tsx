@@ -9,7 +9,7 @@ import UseReducerExample from './Hooks/UseReducerExample';
 import UseCallbackExample from './Hooks/UseCallBackExample';
 import UseMemoExample from './Hooks/UseMemoExample';
 import UseRefExample from './Hooks/UseRefExample';
-import React from 'react';
+import React, { useDebugValue } from 'react';
 
 const APPLICATION_THEMES = {
   LIGHT: {
@@ -83,6 +83,8 @@ export function useThemeContext(): ThemeContextData {
   if (!themeContext) {
     throw new Error('useThemeContext must be used within an AppProvider');
   }
+
+  useDebugValue(themeContext.backgroundColor === "white" ? "LIGHT" : "DARK");
 
   return themeContext;
 }
